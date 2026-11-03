@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="50%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#021a14"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background circle with gold border -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)"/>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="none" stroke="url(#gold)" stroke-width="6" opacity="0.8"/>
+
+  <!-- Islamic Geometric 8-point star watermark -->
+  <g opacity="0.12" stroke="url(#gold)" stroke-width="4" fill="none" transform="translate(256, 256) scale(1.6)">
+    <rect x="-60" y="-60" width="120" height="120"/>
+    <rect x="-60" y="-60" width="120" height="120" transform="rotate(45)"/>
+  </g>
+
+  <!-- Quran Rehal / Open Book Icon -->
+  <g transform="translate(256, 230) scale(1.15)" filter="url(#glow)">
+    <!-- Book Spine & Pages -->
+    <path d="M 0 -30 Q -60 -45 -110 -25 Q -115 50 -105 75 Q -55 55 0 65 Q 55 55 105 75 Q 115 50 110 -25 Q 60 -45 0 -30 Z" fill="#042f24" stroke="url(#gold)" stroke-width="6"/>
+    <path d="M 0 -30 L 0 65" stroke="url(#gold)" stroke-width="4"/>
+    
+    <!-- Page lines -->
+    <path d="M -20 -10 Q -55 -20 -90 -8" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M -20 12 Q -55 2 -90 14" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M -20 34 Q -55 24 -90 36" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    
+    <path d="M 20 -10 Q 55 -20 90 -8" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 20 12 Q 55 2 90 14" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 20 34 Q 55 24 90 36" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Rehal wooden stand -->
+    <path d="M -70 70 L 60 145 M 70 70 L -60 145" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M -80 145 L 80 145" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Crescent and Star at Top -->
+  <g transform="translate(256, 105) scale(0.85)">
+    <path d="M 0 -28 A 24 24 0 1 1 -24 16 A 19 19 0 1 0 0 -28 Z" fill="url(#gold)"/>
+    <circle cx="16" cy="-12" r="5" fill="url(#gold)"/>
+  </g>
+
+  <!-- Typography at bottom -->
+  <text x="256" y="440" font-family="'Cairo', sans-serif" font-weight="800" font-size="34" fill="url(#gold)" text-anchor="middle" letter-spacing="2">QURAN PRO</text>
+  <text x="256" y="470" font-family="'Cairo', sans-serif" font-weight="600" font-size="18" fill="#a7f3d0" text-anchor="middle" letter-spacing="1">القرآن الكريم</text>
+</svg>

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-quran {
+    font-family: 'Amiri', 'Scheherazade New', serif;
+  }
+  .font-cairo {
+    font-family: 'Cairo', system-ui, sans-serif;
+  }
+  .text-gold {
+    color: #e6ca65;
+  }
+  .border-gold {
+    border-color: rgba(212, 175, 55, 0.35);
+  }
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #aa771c 100%);
+  }
+  .bg-emerald-gradient {
+    background: linear-gradient(180deg, #053328 0%, #031d17 100%);
+  }
+  .bg-card-emerald {
+    background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.08) 0%, rgba(4, 47, 36, 0.85) 100%);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 175, 55, 0.18);
+  }
+}
+
+/* Custom smooth scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #021a14;
+}
+::-webkit-scrollbar-thumb {
+  background: #0f513d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Range input styling for audio player */
+input[type=range] {
+  accent-color: #d4af37;
+}

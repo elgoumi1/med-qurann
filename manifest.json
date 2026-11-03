@@ -1,0 +1,29 @@
+{
+  "id": "/",
+  "name": "Quran Reciters PRO - القرآن الكريم",
+  "short_name": "QuranPro",
+  "description": "منصة قرآنية شاملة للاستماع إلى تلاوات القرآن الكريم، قراءته، تفسيره، حفظه وأكاديمية التجويد مع الذكاء الاصطناعي.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#031d17",
+  "theme_color": "#042f24",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["education", "books", "music", "lifestyle"]
+}
